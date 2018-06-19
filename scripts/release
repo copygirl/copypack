@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e # Stop after encountering an error.
+VERSION=$1
+
+sed -i "s/^version: .*$/version: $VERSION/g" copypack.yaml
+git add copypack.yaml
+git add -f copypack.lock.json
+git commit -m "Build $VERSION"
+
+# Create release tag and push it.
+git tag -a v$VERSION -m "Release $VERSION"
+git push origin v$VERSION

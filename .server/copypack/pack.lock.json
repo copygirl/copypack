@@ -1,0 +1,279 @@
+{
+  "name" : "copypack",
+  "title" : "copypack",
+  "version" : "0.1.0",
+  "authors" : [ "copygirl" ],
+  "mcVersion" : "1.12.2",
+  "forge" : 2705,
+  "launch" : {
+    "flags" : [ "-Dfml.ignoreInvalidMinecraftCertificates=true" ]
+  },
+  "userFiles" : {
+    "include" : [ "options.txt", "quark.cfg" ],
+    "exclude" : [ ]
+  },
+  "localDir" : "local",
+  "minecraftDir" : "minecraft",
+  "entries" : [ {
+    "provider" : "CURSE",
+    "name" : "Antique Atlas",
+    "projectID" : 227795,
+    "fileID" : 2562856
+  }, {
+    "provider" : "CURSE",
+    "name" : "Biomes O' Plenty",
+    "projectID" : 220318,
+    "fileID" : 2566346
+  }, {
+    "provider" : "CURSE",
+    "name" : "Chisels & Bits",
+    "projectID" : 231095,
+    "fileID" : 2573151
+  }, {
+    "provider" : "CURSE",
+    "name" : "CraftTweaker",
+    "projectID" : 239197,
+    "fileID" : 2554607
+  }, {
+    "provider" : "CURSE",
+    "name" : "Dynamic Trees",
+    "projectID" : 252818,
+    "fileID" : 2571383
+  }, {
+    "provider" : "CURSE",
+    "name" : "Dynamic Trees - Biomes O' Plenty Compat",
+    "projectID" : 289529,
+    "fileID" : 2563382
+  }, {
+    "provider" : "CURSE",
+    "name" : "Dynamic Trees - Thaumcraft Compat",
+    "projectID" : 292752,
+    "fileID" : 2563383
+  }, {
+    "provider" : "CURSE",
+    "name" : "Ignition: Foundry",
+    "projectID" : 283807,
+    "fileID" : 2573355
+  }, {
+    "provider" : "CURSE",
+    "name" : "Geolosys",
+    "projectID" : 271856,
+    "fileID" : 2572897
+  }, {
+    "provider" : "CURSE",
+    "name" : "Immersive Engineering",
+    "projectID" : 231951,
+    "fileID" : 2559547
+  }, {
+    "provider" : "CURSE",
+    "name" : "Immersive Petroleum",
+    "projectID" : 268250,
+    "fileID" : 2544919
+  }, {
+    "provider" : "CURSE",
+    "name" : "Just Enough Items (JEI)",
+    "projectID" : 238222,
+    "fileID" : 2572552
+  }, {
+    "provider" : "CURSE",
+    "name" : "OpenComputers",
+    "projectID" : 223008,
+    "fileID" : 2540146
+  }, {
+    "provider" : "CURSE",
+    "name" : "Psi",
+    "projectID" : 241665,
+    "fileID" : 2499167
+  }, {
+    "provider" : "CURSE",
+    "name" : "Quark",
+    "projectID" : 243121,
+    "fileID" : 2573421
+  }, {
+    "provider" : "CURSE",
+    "name" : "Thermal Foundation",
+    "projectID" : 222880,
+    "fileID" : 2567555
+  }, {
+    "provider" : "CURSE",
+    "name" : "The Twilight Forest",
+    "projectID" : 227639,
+    "fileID" : 2561393
+  }, {
+    "provider" : "CURSE",
+    "name" : "Wearable Backpacks",
+    "projectID" : 257572,
+    "fileID" : 2525511
+  }, {
+    "provider" : "CURSE",
+    "name" : "Thaumcraft",
+    "projectID" : 223628,
+    "fileID" : 2558648
+  }, {
+    "provider" : "JENKINS",
+    "name" : "Charset",
+    "jenkinsUrl" : "https://ci.elytradev.com",
+    "job" : "asie-minecraft/Charset/1.12",
+    "buildNumber" : 1,
+    "fileNameRegex" : "Charset-[0-9.]*\\.jar"
+  }, {
+    "provider" : "CURSE",
+    "name" : "Unity",
+    "folder" : "resourcepacks",
+    "fileName" : "Unity.zip",
+    "side" : "CLIENT",
+    "projectID" : 222097,
+    "fileID" : 2547422
+  }, {
+    "provider" : "DIRECT",
+    "name" : "Slice",
+    "folder" : "resourcepacks",
+    "fileName" : "Slice.zip",
+    "side" : "CLIENT",
+    "url" : "https://centerofthemultiverse.net/launcher/mirror/Slice.zip"
+  }, {
+    "provider" : "CURSE",
+    "name" : "Better Foliage",
+    "side" : "CLIENT",
+    "projectID" : 228529,
+    "fileID" : 2478147
+  }, {
+    "provider" : "CURSE",
+    "name" : "Better Placement",
+    "side" : "CLIENT",
+    "projectID" : 278406,
+    "fileID" : 2481852
+  }, {
+    "provider" : "CURSE",
+    "name" : "Mouse Tweaks",
+    "side" : "CLIENT",
+    "projectID" : 60089,
+    "fileID" : 2462627
+  }, {
+    "provider" : "CURSE",
+    "name" : "Inventory Tweaks",
+    "side" : "CLIENT",
+    "projectID" : 223094,
+    "fileID" : 2514356
+  }, {
+    "provider" : "CURSE",
+    "name" : "Item Scroller",
+    "side" : "CLIENT",
+    "projectID" : 242064,
+    "fileID" : 2434598
+  }, {
+    "provider" : "CURSE",
+    "name" : "Caliper",
+    "side" : "CLIENT",
+    "projectID" : 266824,
+    "fileID" : 2550118
+  }, {
+    "provider" : "CURSE",
+    "name" : "TellMe",
+    "side" : "CLIENT",
+    "projectID" : 225781,
+    "fileID" : 2565655
+  }, {
+    "provider" : "CURSE",
+    "name" : "BTFU continuous rsync incremental backup",
+    "side" : "SERVER",
+    "projectID" : 246105,
+    "fileID" : 2535073
+  }, {
+    "provider" : "CURSE",
+    "name" : "Placebo",
+    "projectID" : 283644,
+    "fileID" : 2558924
+  }, {
+    "provider" : "CURSE",
+    "name" : "AutoRegLib",
+    "projectID" : 250363,
+    "fileID" : 2573417
+  }, {
+    "provider" : "CURSE",
+    "name" : "CoFH Core",
+    "projectID" : 69162,
+    "fileID" : 2568324
+  }, {
+    "provider" : "CURSE",
+    "name" : "CoFH World",
+    "projectID" : 271384,
+    "fileID" : 2567263
+  }, {
+    "provider" : "CURSE",
+    "name" : "Baubles",
+    "projectID" : 227083,
+    "fileID" : 2518667
+  }, {
+    "provider" : "CURSE",
+    "name" : "Bookshelf",
+    "side" : "CLIENT",
+    "projectID" : 228525,
+    "fileID" : 2572825
+  }, {
+    "provider" : "CURSE",
+    "name" : "Redstone Flux",
+    "projectID" : 270789,
+    "fileID" : 2567260
+  } ],
+  "features" : [ {
+    "entries" : [ "Better Foliage" ],
+    "properties" : {
+      "name" : "Better Foliage",
+      "selected" : true,
+      "description" : "Prettier grass and leaves, at the cost of rendering performance.",
+      "recommendation" : "starred"
+    },
+    "files" : { }
+  }, {
+    "entries" : [ "Better Placement" ],
+    "properties" : {
+      "name" : "Better Placement",
+      "selected" : true,
+      "description" : "Just hold right click and drag to place ALL THE BLOCKS at once!",
+      "recommendation" : "starred"
+    },
+    "files" : { }
+  }, {
+    "entries" : [ "Mouse Tweaks" ],
+    "properties" : {
+      "name" : "Mouse Tweaks",
+      "selected" : true,
+      "description" : "Convenience functions for moving items around containers with the mouse.",
+      "recommendation" : "starred"
+    },
+    "files" : { }
+  }, {
+    "entries" : [ "Inventory Tweaks" ],
+    "properties" : {
+      "name" : "Inventory Tweaks",
+      "selected" : false,
+      "description" : "Fine! If you really want it so badly! You MONSTER!"
+    },
+    "files" : { }
+  }, {
+    "entries" : [ "Item Scroller" ],
+    "properties" : {
+      "name" : "Item Scroller",
+      "selected" : false,
+      "description" : "Alternative to Mouse Tweaks for moving items with mouse wheel and similar."
+    },
+    "files" : { }
+  }, {
+    "entries" : [ "Caliper" ],
+    "properties" : {
+      "name" : "Caliper",
+      "selected" : false,
+      "description" : "Provides collection of tools for profiling and testing the pack."
+    },
+    "files" : { }
+  }, {
+    "entries" : [ "TellMe" ],
+    "properties" : {
+      "name" : "TellMe",
+      "selected" : false,
+      "description" : "Adds utility commands for displaying and dumping information about things."
+    },
+    "files" : { }
+  } ]
+}
