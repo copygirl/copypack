@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e                  # Stop after encountering an error.
+shopt -s expand_aliases # Enable aliases.
+alias voodoo='java -jar bootstrap-voodoo.jar'
+
+# Repackage the files so changes will be applied.
+./scripts/pack
+
+voodoo pack test mmc copypack.lock.json "$@"

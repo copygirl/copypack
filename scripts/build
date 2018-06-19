@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e                  # Stop after encountering an error.
+shopt -s expand_aliases # Enable aliases.
+alias voodoo='java -jar bootstrap-voodoo.jar'
+
+voodoo flatten copypack.yaml -o copypack.json
+voodoo build copypack.json -o copypack.lock.json "$@"

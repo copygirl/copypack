@@ -1,0 +1,20 @@
+#!/bin/bash
+set -e # Stop after encountering an error.
+VERSION=$1
+
+# Replace version in .yaml file.
+sed -i "s/^version: .*$/version: $VERSION/g" copypack.yaml
+
+# Rebuild the pack so .lock.json has the updated version.
+./scripts/build
+# Also pack it up so we can upload it afterwards.
+./scripts/pack
+
+# Add changed files and commit.
+git add copypack.yaml
+git add copypack.lock.json
+git commit -m "Build $VERSION"
+
+# Create release tag and push it.
+git tag -a v$VERSION -m "Release $VERSION"
+git push origin v$VERSION
