@@ -1,8 +1,8 @@
 {
 	"priority": 1000000000000,
 	"populate": {
+		
 		"dirt": {
-
 			"distribution": "uniform",
 			"generator": {
 				"block": "dirt",
@@ -22,7 +22,7 @@
 				]
 			}
 		},
-
+		
 		"gravel": {
 			"distribution": "uniform",
 			"generator": {
@@ -43,7 +43,7 @@
 				]
 			}
 		},
-
+		
 		"diorite": {
 			"distribution": "uniform",
 			"generator": {
@@ -69,7 +69,7 @@
 				]
 			}
 		},
-
+		
 		"granite": {
 			"distribution": "uniform",
 			"generator": {
@@ -95,7 +95,7 @@
 				]
 			}
 		},
-
+		
 		"andesite": {
 			"distribution": "uniform",
 			"generator": {
@@ -121,7 +121,7 @@
 				]
 			}
 		},
-
+		
 		"coal": {
 			"distribution": "uniform",
 			"generator": {
@@ -142,7 +142,7 @@
 				]
 			}
 		},
-
+		
 		"iron": {
 			"distribution": "uniform",
 			"generator": {
@@ -163,7 +163,7 @@
 				]
 			}
 		},
-
+		
 		"gold": {
 			"distribution": "uniform",
 			"generator": {
@@ -184,7 +184,7 @@
 				]
 			}
 		},
-
+		
 		"redstone": {
 			"distribution": "uniform",
 			"generator": {
@@ -205,7 +205,7 @@
 				]
 			}
 		},
-
+		
 		"diamond": {
 			"distribution": "uniform",
 			"generator": {
@@ -226,7 +226,7 @@
 				]
 			}
 		},
-
+		
 		"lapis": {
 			"distribution": "gaussian",
 			"generator": {
@@ -247,7 +247,7 @@
 				]
 			}
 		},
-
+		
 		"mesa_gold": {
 			"enabled": true,
 			"distribution": "uniform",
@@ -286,7 +286,7 @@
 				]
 			}
 		},
-
+		
 		"emerald": {
 			"distribution": "uniform",
 			"generator": {
@@ -326,7 +326,7 @@
 				]
 			}
 		},
-
+		
 		"silverfish": {
 			"distribution": "uniform",
 			"generator": {
@@ -366,7 +366,7 @@
 				]
 			}
 		},
-
+		
 		"quartz": {
 			"distribution": "uniform",
 			"generator": {
@@ -389,5 +389,6 @@
 			},
 			"dimension": "all"
 		}
+		
 	}
 }

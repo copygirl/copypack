@@ -1,0 +1,51 @@
+{
+	"populate": {
+		
+		"nether_quartz_common": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "minecraft:quartz_ore",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:flesh",
+					"biomesoplenty:grass"
+				],
+				"cluster-size": 20,
+				"sparse": false
+			},
+			"cluster-count": 6,
+			"min-height": 12,
+			"max-height": 116,
+			"retrogen": "true",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		},
+		
+		"nether_quartz_rare": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "minecraft:quartz_ore",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:flesh",
+					"biomesoplenty:grass"
+				],
+				"cluster-size": 60,
+				"sparse": false
+			},
+			"cluster-count": 2,
+			"min-height": 12,
+			"max-height": 116,
+			"retrogen": "true",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		}
+		
+	}
+}

@@ -1,6 +1,7 @@
 {
-	"dependencies": "foundry",
+	"dependencies": [ "foundry", "disabled" ],
 	"populate": {
+		
 		"aluminium": {
 			"distribution": "uniform",
 			"generator": {
@@ -24,5 +25,6 @@
 				]
 			}
 		}
+		
 	}
 }

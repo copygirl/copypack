@@ -1,6 +1,7 @@
 {
-	"dependencies": "thermalfoundation",
+	"dependencies": [ "thermalfoundation", "disabled" ],
 	"populate": {
+		
 		"copper": {
 			"distribution": "uniform",
 			"generator": {
@@ -26,6 +27,7 @@
 				]
 			}
 		},
+		
 		"tin": {
 			"distribution": "uniform",
 			"generator": {
@@ -51,6 +53,7 @@
 				]
 			}
 		},
+		
 		"silver": {
 			"distribution": "uniform",
 			"generator": {
@@ -86,6 +89,7 @@
 				]
 			}
 		},
+		
 		"lead": {
 			"distribution": "uniform",
 			"generator": {
@@ -121,6 +125,7 @@
 				]
 			}
 		},
+		
 		"nickel": {
 			"distribution": "uniform",
 			"generator": {
@@ -146,6 +151,7 @@
 				]
 			}
 		},
+		
 		"copper_ocean": {
 			"distribution": "uniform",
 			"generator": {
@@ -179,6 +185,7 @@
 				]
 			}
 		},
+		
 		"copper_high": {
 			"distribution": "uniform",
 			"generator": {
@@ -204,5 +211,6 @@
 				]
 			}
 		}
+		
 	}
 }
