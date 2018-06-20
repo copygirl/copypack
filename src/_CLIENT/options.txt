@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:true
-resourcePacks:["Golrith\u0027s Antique Atlas","Unity.zip","Slice.zip","copyresourcepack"]
+resourcePacks:["Golrith\u0027s Antique Atlas.zip","Unity.zip","Slice.zip","copyresourcepack"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
