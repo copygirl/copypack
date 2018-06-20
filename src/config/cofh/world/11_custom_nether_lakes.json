@@ -1,0 +1,250 @@
+{
+	"populate": {
+		
+		"nether_lake_quicksand": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "biomesoplenty:sand",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:grass",
+					"biomesoplenty:flesh",
+					"biomesoplenty:ash_block"
+				],
+				"use-material": true,
+				"outline-block": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand"
+				]
+			},
+			"cluster-count": 2,
+			"chunk-chance": 3,
+			"min-height": 16,
+			"max-height": 104,
+			"follow-terrain": true,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [{
+					"type": "id",
+					"entry": [ "biomesoplenty:corrupted_sands" ]
+				}]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		},
+		
+		"nether_lake_blood": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "biomesoplenty:blood",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:grass",
+					"biomesoplenty:flesh",
+					"biomesoplenty:ash_block"
+				],
+				"use-material": true,
+				"outline-block": [
+					"minecraft:nether_wart_block",
+					"biomesoplenty:flesh"
+				]
+			},
+			"cluster-count": 2,
+			"chunk-chance": 3,
+			"min-height": 16,
+			"max-height": 104,
+			"follow-terrain": true,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [{
+					"type": "id",
+					"entry": [ "biomesoplenty:visceral_heap" ]
+				}]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		},
+		
+		"nether_lake_poison": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "biomesoplenty:poison",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:grass",
+					"biomesoplenty:flesh",
+					"biomesoplenty:ash_block"
+				],
+				"use-material": true,
+				"outline-block": [
+					"minecraft:nether_wart_block",
+					{
+						"name": "minecraft:brown_mushroom_block",
+						"properties": { "variant": "all_outside" }
+					}
+				]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 3,
+			"min-height": 16,
+			"max-height": 104,
+			"follow-terrain": true,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [{
+					"type": "id",
+					"entry": [ "biomesoplenty:fungi_forest" ]
+				}]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		},
+		
+		"nether_lake_pyrotheum": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "thermalfoundation:fluid_pyrotheum",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:grass",
+					"biomesoplenty:flesh",
+					"biomesoplenty:ash_block"
+				],
+				"use-material": true,
+				"outline-block": [
+					"minecraft:nether_brick",
+					"quark:charred_nether_bricks",
+					"biomesoplenty:ash_block"
+				]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 6,
+			"min-height": 16,
+			"max-height": 104,
+			"follow-terrain": true,
+			"retrogen": true,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [{
+					"type": "id",
+					"entry": [ "biomesoplenty:phantasmagoric_inferno" ]
+				}]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		},
+		
+		
+		"nether_lake_oil": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "thermalfoundation:fluid_crude_oil",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:grass",
+					"biomesoplenty:flesh",
+					"biomesoplenty:ash_block"
+				],
+				"use-material": true,
+				"outline-block": [
+					"minecraft:coal_block",
+					"quark:basalt"
+				]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 7,
+			"min-height": 16,
+			"max-height": 104,
+			"follow-terrain": true,
+			"retrogen": true,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		},
+		
+		"nether_lake_redstone": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "thermalfoundation:fluid_redstone",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:grass",
+					"biomesoplenty:flesh",
+					"biomesoplenty:ash_block"
+				],
+				"use-material": true,
+				"outline-block": [
+					"minecraft:magma",
+					"minecraft:nether_wart_block",
+					"minecraft:redstone_block"
+				]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 10,
+			"min-height": 16,
+			"max-height": 104,
+			"follow-terrain": true,
+			"retrogen": true,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		},
+		
+		"nether_lake_petrotheum": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "lake",
+				"block": "thermalfoundation:fluid_petrotheum",
+				"material": [
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"biomesoplenty:grass",
+					"biomesoplenty:flesh",
+					"biomesoplenty:ash_block"
+				],
+				"use-material": true,
+				"outline-block": [
+					"minecraft:cobblestone",
+					"minecraft:stone",
+					"minecraft:iron_block"
+				]
+			},
+			"cluster-count": 1,
+			"chunk-chance": 8,
+			"min-height": 16,
+			"max-height": 104,
+			"follow-terrain": true,
+			"retrogen": true,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [ -1 ]
+			}
+		}
+		
+	}
+}
