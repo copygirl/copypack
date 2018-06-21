@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 # Copper and tin are the exception to the rebalancing.
 
 # =======================================
@@ -135,3 +137,32 @@ recipes.addShaped(<thermalfoundation:material:256>,
 	[ [           null,  <ore:ingotTin>,           null ],
 	  [ <ore:ingotTin>, <ore:stickWood>, <ore:ingotTin> ],
 	  [           null,  <ore:ingotTin>,           null ] ]);
+
+
+# ================================
+# Remove Alloy Furnace and recipes
+# ================================
+
+mods.jei.JEI.removeAndHide(<foundry:alloyfurnace>);
+
+function removeAlloyRecipe(ingot1 as IItemStack, dust1 as IItemStack, ingot2 as IItemStack, dust2 as IItemStack) {
+	mods.foundry.AlloyFurnace.removeRecipe(ingot1, ingot2);
+	mods.foundry.AlloyFurnace.removeRecipe( dust1, ingot2);
+	mods.foundry.AlloyFurnace.removeRecipe(ingot1,  dust2);
+	mods.foundry.AlloyFurnace.removeRecipe( dust1,  dust2);
+}
+
+# Bronze
+removeAlloyRecipe(<thermalfoundation:material:128> * 3, <thermalfoundation:material:64> * 3,
+                  <thermalfoundation:material:129>, <thermalfoundation:material:65>);
+# Invar
+removeAlloyRecipe(<minecraft:iron_ingot> * 2, <thermalfoundation:material:0> * 2,
+                  <thermalfoundation:material:133>, <thermalfoundation:material:69>);
+# Electrum
+removeAlloyRecipe(<minecraft:gold_ingot>, <thermalfoundation:material:1>,
+                  <thermalfoundation:material:130>, <thermalfoundation:material:66>);
+
+# Refractory Glass
+mods.foundry.AlloyFurnace.removeRecipe(<minecraft:sand>, <minecraft:clay_ball>);
+# Readd Refractory Glass recipe to the Alloy Kiln
+mods.immersiveengineering.AlloySmelter.addRecipe(<foundry:refractoryglass>, <minecraft:sand>, <minecraft:clay_ball>, 300);
