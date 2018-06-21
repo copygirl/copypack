@@ -54,6 +54,52 @@ furnace.remove(<thermalfoundation:material:166>);
 furnace.remove(<thermalfoundation:material:167>);
 
 
+# ===================================
+# Disable metal tool / armor crafting
+# ===================================
+
+global           tools as string[] = [ "sword", "shovel", "pickaxe", "axe", "hoe" ];
+global    vanillaArmor as string[] = [ "helmet", "chestplate", "leggings", "boots" ];
+global foundationArmor as string[] = [ "helmet", "plate", "legs", "boots" ];
+
+function removeVanillaToolsAndArmor(material as string) {
+	for tool in tools {
+		recipes.removeByRecipeName("minecraft:" + material + "_" + tool);
+	}
+	for armor in vanillaArmor {
+		recipes.removeByRecipeName("minecraft:" + material + "_" + armor);
+	}
+}
+
+function removeFoundationToolsAndArmor(material as string) {
+	for tool in tools {
+		recipes.removeByRecipeName("thermalfoundation:tool." + tool + "_" + material);
+	}
+	for armor in foundationArmor {
+		recipes.removeByRecipeName("thermalfoundation:armor." + armor + "_" + material);
+	}
+}
+
+removeVanillaToolsAndArmor("iron");
+removeVanillaToolsAndArmor("golden");
+
+removeFoundationToolsAndArmor("silver");
+removeFoundationToolsAndArmor("lead");
+removeFoundationToolsAndArmor("aluminum");
+removeFoundationToolsAndArmor("nickel");
+removeFoundationToolsAndArmor("platinum");
+removeFoundationToolsAndArmor("steel");
+removeFoundationToolsAndArmor("electrum");
+removeFoundationToolsAndArmor("invar");
+removeFoundationToolsAndArmor("bronze");
+removeFoundationToolsAndArmor("constanstan");
+
+# TODO: Do something about bow, fishing rod, shears, sickle, hammer and shield.
+#       Perhaps add custom sticks / molds for them, also?
+
+# TODO: Maybe make diamond tools only obtainable through exploration and trading?
+
+
 # ===============================
 # Disable basic crafting of gears
 # ===============================
