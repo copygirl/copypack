@@ -2,6 +2,18 @@ import crafttweaker.item.IItemStack;
 
 # Copper and tin are the exception to the rebalancing.
 
+# =================================================
+# Adjust some recipes because iron is more mid-game
+# =================================================
+
+# Engineer's Hammer
+recipes.remove(<immersiveengineering:tool:0>);
+recipes.addShaped(<immersiveengineering:tool:0>,
+	[ [            null, <ore:ingotCopper>, <minecraft:string> ],
+	  [            null,   <ore:stickWood>,  <ore:ingotCopper> ],
+	  [ <ore:stickWood>,              null,               null ] ]);
+
+
 # =======================================
 # Disable furnace smelting of most metals
 # =======================================
