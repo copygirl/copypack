@@ -26,11 +26,11 @@ furnace.remove(<thermalfoundation:material:132>);
 # Nickel
 furnace.remove(<immersiveengineering:metal:4>);
 furnace.remove(<thermalfoundation:material:133>);
-# Uranium
-furnace.remove(<immersiveengineering:metal:5>);
 # Platinum
 furnace.remove(<thermalfoundation:material:134>);
 furnace.remove(<thermalfoundation:material:134> * 2);
+# Uranium
+furnace.remove(<immersiveengineering:metal:5>);
 # Iridium
 furnace.remove(<thermalfoundation:material:135>);
 # Mana Infused
@@ -54,6 +54,16 @@ furnace.remove(<thermalfoundation:material:165>);
 furnace.remove(<thermalfoundation:material:166>);
 # Enderium
 furnace.remove(<thermalfoundation:material:167>);
+
+
+# ===================================
+# Add copper and tin cluster smelting
+# ===================================
+
+# Copper
+furnace.addRecipe(<thermalfoundation:material:128>, <geolosys:cluster:2>, 1.0);
+# Tin
+furnace.addRecipe(<thermalfoundation:material:129>, <geolosys:cluster:3>, 0.8);
 
 
 # ===================================
