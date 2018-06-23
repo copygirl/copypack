@@ -9,7 +9,7 @@
     "flags" : [ "-Dfml.ignoreInvalidMinecraftCertificates=true" ]
   },
   "userFiles" : {
-    "include" : [ "options.txt", "quark.cfg" ],
+    "include" : [ "options.txt", "quark.cfg", "jei.cfg" ],
     "exclude" : [ ]
   },
   "localDir" : "local",

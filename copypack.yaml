@@ -11,6 +11,7 @@ userFiles:
   include:
   - "options.txt"
   - "quark.cfg"
+  - "jei.cfg"
   exclude: []
 
 root:
