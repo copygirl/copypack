@@ -39,7 +39,7 @@ chatHeightFocused:1.0
 chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
-mipmapLevels:4
+mipmapLevels:0
 forceUnicodeFont:false
 reducedDebugInfo:false
 useNativeTransport:true
@@ -73,8 +73,8 @@ key_key.smoothCamera:0
 key_key.fullscreen:87
 key_key.spectatorOutlines:0
 key_key.swapHands:33
-key_key.saveToolbarActivator:46
-key_key.loadToolbarActivator:45
+key_key.saveToolbarActivator:0
+key_key.loadToolbarActivator:0
 key_key.advancements:38
 key_key.hotbar.1:2
 key_key.hotbar.2:3
@@ -85,9 +85,11 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_Change Caster Focus:33
-key_Misc Caster Toggle:34
+key_Change Caster Focus:34
+key_Misc Caster Toggle:34:SHIFT
+key_psimisc.keybind:46
 key_quark.keybind.lockBuilding:37
+key_quark.keybind.changeHotbar:44
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -100,10 +102,37 @@ key_quark.emote.shrug:0
 key_quark.emote.headbang:0
 key_quark.emote.weep:0
 key_quark.emote.facepalm:0
-key_quark.keybind.changeHotbar:44
-key_keybind.baublesinventory:48
+key_keybind.baublesinventory:23
 key_key.betterfoliage.gui:66
-key_key.wearablebackpacks.open:0
+key_key.wearablebackpacks.open:48
+key_mod.chiselsandbits.chiselmode.single:0
+key_mod.chiselsandbits.chiselmode.snap2:0
+key_mod.chiselsandbits.chiselmode.snap4:0
+key_mod.chiselsandbits.chiselmode.snap8:0
+key_mod.chiselsandbits.chiselmode.line:0
+key_mod.chiselsandbits.chiselmode.plane:0
+key_mod.chiselsandbits.chiselmode.connected_plane:0
+key_mod.chiselsandbits.chiselmode.cube_small:0
+key_mod.chiselsandbits.chiselmode.cube_medium:0
+key_mod.chiselsandbits.chiselmode.cube_large:0
+key_mod.chiselsandbits.chiselmode.same_material:0
+key_mod.chiselsandbits.chiselmode.drawn_region:0
+key_mod.chiselsandbits.chiselmode.connected_material:0
+key_mod.chiselsandbits.positivepatternmode.replace:0
+key_mod.chiselsandbits.positivepatternmode.additive:0
+key_mod.chiselsandbits.positivepatternmode.placement:0
+key_mod.chiselsandbits.positivepatternmode.impose:0
+key_mod.chiselsandbits.tapemeasure.bit:0
+key_mod.chiselsandbits.tapemeasure.block:0
+key_mod.chiselsandbits.tapemeasure.distance:0
+key_mod.chiselsandbits.other.mode:56
+key_mod.chiselsandbits.other.rotate.ccw:0
+key_mod.chiselsandbits.other.rotate.cw:0
+key_mod.chiselsandbits.other.pickbit:0
+key_mod.chiselsandbits.other.offgrid:0
+key_mod.chiselsandbits.other.undo:0
+key_mod.chiselsandbits.other.redo:0
+key_mod.chiselsandbits.other.add_to_clipboard:0
 key_key.cofh.multimode:47
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
@@ -116,14 +145,14 @@ key_key.jei.nextPage:209
 key_key.immersiveengineering.magnetEquip:31
 key_key.immersiveengineering.chemthrowerSwitch:0
 key_key.clipboardPaste:210
-soundCategory_master:1.0
+soundCategory_master:0.5
 soundCategory_music:0.5
 soundCategory_record:1.0
-soundCategory_weather:0.20422535
+soundCategory_weather:0.2
 soundCategory_block:1.0
 soundCategory_hostile:1.0
-soundCategory_neutral:1.0
-soundCategory_player:1.0
+soundCategory_neutral:0.6
+soundCategory_player:0.8
 soundCategory_ambient:1.0
 soundCategory_voice:1.0
 modelPart_cape:true
