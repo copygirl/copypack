@@ -23,7 +23,7 @@
     "provider" : "CURSE",
     "name" : "Biomes O' Plenty",
     "projectID" : 220318,
-    "fileID" : 2566346
+    "fileID" : 2574879
   }, {
     "provider" : "CURSE",
     "name" : "Chisels & Bits",
@@ -89,6 +89,11 @@
     "name" : "Quark",
     "projectID" : 243121,
     "fileID" : 2573421
+  }, {
+    "provider" : "CURSE",
+    "name" : "Redstone Flux",
+    "projectID" : 270789,
+    "fileID" : 2567260
   }, {
     "provider" : "CURSE",
     "name" : "Thermal Foundation",
@@ -197,7 +202,7 @@
     "provider" : "CURSE",
     "name" : "Placebo",
     "projectID" : 283644,
-    "fileID" : 2558924
+    "fileID" : 2575473
   }, {
     "provider" : "CURSE",
     "name" : "AutoRegLib",
@@ -224,11 +229,6 @@
     "side" : "CLIENT",
     "projectID" : 228525,
     "fileID" : 2572825
-  }, {
-    "provider" : "CURSE",
-    "name" : "Redstone Flux",
-    "projectID" : 270789,
-    "fileID" : 2567260
   } ],
   "features" : [ {
     "entries" : [ "Better Foliage" ],
