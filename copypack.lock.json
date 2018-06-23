@@ -117,6 +117,20 @@
     "buildNumber" : 1,
     "fileNameRegex" : "Charset-[0-9.]*\\.jar"
   }, {
+    "provider" : "JENKINS",
+    "name" : "Fruit Phone",
+    "side" : "CLIENT",
+    "jenkinsUrl" : "https://ci.elytradev.com",
+    "job" : "elytra/FruitPhone/1.12.2",
+    "buildNumber" : 5
+  }, {
+    "provider" : "JENKINS",
+    "name" : "ProbeDataProvider",
+    "side" : "CLIENT",
+    "jenkinsUrl" : "https://ci.elytradev.com",
+    "job" : "elytra/ProbeDataProvider/1.12",
+    "buildNumber" : 2
+  }, {
     "provider" : "CURSE",
     "name" : "Unity",
     "folder" : "resourcepacks",
