@@ -10,10 +10,11 @@ sed -i "s/^version: .*$/version: $VERSION/g" copypack.yaml
 # Also pack it up so we can upload it afterwards.
 ./scripts/pack
 
-# Add changed files and commit.
+# Add changed files, commit and push.
 git add copypack.yaml
 git add copypack.lock.json
 git commit -m "Build $VERSION"
+git push
 
 # Create release tag and push it.
 git tag -a v$VERSION -m "Release $VERSION"
