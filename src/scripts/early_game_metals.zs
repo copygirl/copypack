@@ -18,6 +18,14 @@ recipes.addShaped(<immersiveengineering:tool:0>,
 	  [            null,   <ore:stickWood>,  <ore:ingotCopper> ],
 	  [ <ore:stickWood>,              null,               null ] ]);
 
+# Metal Caster
+recipes.remove(<foundry:machine:1>);
+recipes.addShaped(<foundry:machine:1>,
+	[ [               null,            <ore:chestWood>,               null ],
+	  [ <ore:dustRedstone>, <foundry:componentblock:0>, <ore:dustRedstone> ],
+	  [      <ore:gearTin>,       <ore:craftingPiston>,      <ore:gearTin> ] ]);
+
+
 # =======================================
 # Remove / replace plate and gear recipes
 # =======================================
