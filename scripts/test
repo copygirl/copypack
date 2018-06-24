@@ -6,4 +6,4 @@ alias voodoo='java -jar bootstrap-voodoo.jar'
 # Repackage the files so changes will be applied.
 ./scripts/pack
 
-voodoo pack test mmc copypack.lock.json "$@"
+voodoo test mmc copypack.lock.json "$@"
