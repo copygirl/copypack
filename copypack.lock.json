@@ -16,42 +16,6 @@
   "minecraftDir" : "src",
   "entries" : [ {
     "provider" : "CURSE",
-    "name" : "AutoRegLib",
-    "projectID" : 250363,
-    "fileID" : 2573417
-  }, {
-    "provider" : "CURSE",
-    "name" : "Baubles",
-    "projectID" : 227083,
-    "fileID" : 2518667
-  }, {
-    "provider" : "CURSE",
-    "name" : "Bookshelf",
-    "side" : "CLIENT",
-    "projectID" : 228525,
-    "fileID" : 2572825
-  }, {
-    "provider" : "CURSE",
-    "name" : "CoFH Core",
-    "projectID" : 69162,
-    "fileID" : 2568324
-  }, {
-    "provider" : "CURSE",
-    "name" : "CoFH World",
-    "projectID" : 271384,
-    "fileID" : 2567263
-  }, {
-    "provider" : "CURSE",
-    "name" : "Placebo",
-    "projectID" : 283644,
-    "fileID" : 2575473
-  }, {
-    "provider" : "CURSE",
-    "name" : "Redstone Flux",
-    "projectID" : 270789,
-    "fileID" : 2567260
-  }, {
-    "provider" : "CURSE",
     "name" : "Antique Atlas",
     "projectID" : 227795,
     "fileID" : 2562856
@@ -155,14 +119,12 @@
   }, {
     "provider" : "JENKINS",
     "name" : "Fruit Phone",
-    "side" : "CLIENT",
     "jenkinsUrl" : "https://ci.elytradev.com",
     "job" : "elytra/FruitPhone/1.12.2",
     "buildNumber" : 5
   }, {
     "provider" : "JENKINS",
     "name" : "ProbeDataProvider",
-    "side" : "CLIENT",
     "jenkinsUrl" : "https://ci.elytradev.com",
     "job" : "elytra/ProbeDataProvider/1.12",
     "buildNumber" : 2
@@ -229,6 +191,42 @@
     "side" : "SERVER",
     "projectID" : 246105,
     "fileID" : 2535073
+  }, {
+    "provider" : "CURSE",
+    "name" : "Placebo",
+    "projectID" : 283644,
+    "fileID" : 2575473
+  }, {
+    "provider" : "CURSE",
+    "name" : "AutoRegLib",
+    "projectID" : 250363,
+    "fileID" : 2573417
+  }, {
+    "provider" : "CURSE",
+    "name" : "CoFH Core",
+    "projectID" : 69162,
+    "fileID" : 2568324
+  }, {
+    "provider" : "CURSE",
+    "name" : "CoFH World",
+    "projectID" : 271384,
+    "fileID" : 2567263
+  }, {
+    "provider" : "CURSE",
+    "name" : "Baubles",
+    "projectID" : 227083,
+    "fileID" : 2518667
+  }, {
+    "provider" : "CURSE",
+    "name" : "Bookshelf",
+    "side" : "CLIENT",
+    "projectID" : 228525,
+    "fileID" : 2572825
+  }, {
+    "provider" : "CURSE",
+    "name" : "Redstone Flux",
+    "projectID" : 270789,
+    "fileID" : 2567260
   } ],
   "features" : [ {
     "entries" : [ "Better Foliage" ],

@@ -20,16 +20,6 @@ root:
   curseOptionalDependencies: false
   
   entries:
-  # DEPENDENCIES (currently broken?)
-  - AutoRegLib
-  - Baubles
-  - Bookshelf
-  - CoFH Core
-  - CoFH World
-  - Placebo
-  - Redstone Flux
-  
-  # MODS
   - Antique Atlas
   - Biomes O' Plenty
   - Chisels & Bits
