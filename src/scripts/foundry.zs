@@ -1,6 +1,42 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
+
+# Material Router
+mods.jei.JEI.removeAndHide(<foundry:machine:4>);
+
+# Coal Coke (done by Immersive Engineering)
+mods.jei.JEI.hide(<foundry:component:21>);
+
+# TODO: Remove Heating Coil + Constantan Rod and adjust recipes?
+
+
+# ==============================================
+# Fix ores smelting into 1 ingot worth of liquid
+# ==============================================
+
+function replaceMeltingRecipe(component as IItemStack, liquid as ILiquidStack) {
+	mods.foundry.Melting.removeRecipe(component);
+	mods.foundry.Melting.addRecipe(liquid, component);
+}
+
+replaceMeltingRecipe(<geolosys:cluster:0>, <liquid:liquidiron> * 108);
+replaceMeltingRecipe(<geolosys:cluster:1>, <liquid:liquidgold> * 108);
+replaceMeltingRecipe(<geolosys:cluster:2>, <liquid:liquidcopper> * 108);
+replaceMeltingRecipe(<geolosys:cluster:3>, <liquid:liquidtin> * 108);
+replaceMeltingRecipe(<geolosys:cluster:4>, <liquid:liquidsilver> * 108);
+replaceMeltingRecipe(<geolosys:cluster:5>, <liquid:liquidlead> * 108);
+replaceMeltingRecipe(<geolosys:cluster:6>, <liquid:liquidaluminium> * 108);
+replaceMeltingRecipe(<geolosys:cluster:7>, <liquid:liquidnickel> * 108);
+replaceMeltingRecipe(<geolosys:cluster:8>, <liquid:liquidplatinum> * 108);
+replaceMeltingRecipe(<geolosys:cluster:10>, <liquid:liquidzinc> * 108);
+replaceMeltingRecipe(<geolosys:cluster:12>, <liquid:liquidosmium> * 108);
+
+
+# ===========================================
+# Remove guns, ingredients, bullets and molds
+# ===========================================
+
 function removeAndHideComponent(component as IItemStack, mold as IItemStack, liquid as ILiquidStack) {
 	mods.foundry.Casting.removeRecipe(liquid, mold);
 	mods.jei.JEI.hide(component);
@@ -15,19 +51,6 @@ function removeAndHideComponentAndMold(component as IItemStack, mold as IItemSta
 	removeAndHideComponent(component, mold, liquid);
 	removeAndHideMold(mold);
 }
-
-
-# Material Router
-mods.jei.JEI.removeAndHide(<foundry:machine:4>);
-
-# Coal Coke (done by Immersive Engineering)
-mods.jei.JEI.hide(<foundry:component:21>);
-
-# TODO: Remove Heating Coil + Constantan Rod and adjust recipes?
-
-# ===========================================
-# Remove guns, ingredients, bullets and molds
-# ===========================================
 
 # Gun Barrel
 removeAndHideComponentAndMold(<foundry:component:3>, <foundry:mold:19>, <liquid:liquidsteel> * 108);
