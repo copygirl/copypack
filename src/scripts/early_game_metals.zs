@@ -1,6 +1,11 @@
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
-# Copper and tin are the exception to the rebalancing.
+function removeRecipesOfItemsWithMeta(base as IItemStack, metas as int[]) {
+	for meta in metas {
+		recipes.remove(base.definition.makeStack(meta));
+	}
+}
 
 # =================================================
 # Adjust some recipes because iron is more mid-game
@@ -12,6 +17,46 @@ recipes.addShaped(<immersiveengineering:tool:0>,
 	[ [            null, <ore:ingotCopper>, <minecraft:string> ],
 	  [            null,   <ore:stickWood>,  <ore:ingotCopper> ],
 	  [ <ore:stickWood>,              null,               null ] ]);
+
+# =======================================
+# Remove / replace plate and gear recipes
+# =======================================
+
+global hammer as IIngredient = <immersiveengineering:tool:0>;
+
+function addPlateRecipe(result as IItemStack, item as IIngredient) {
+	recipes.addShapeless(result, [ item, item, hammer.transformDamage(2) ]);
+}
+
+function addGearRecipe(result as IItemStack, item as IIngredient) {
+	recipes.addShaped(result, [ [ null, item, hammer.transformDamage(3) ],
+	                            [ item, item, item ],
+	                            [ null, item, null ] ]);
+}
+
+
+# Remove plate recipes using Engineer's Hammer
+removeRecipesOfItemsWithMeta(<immersiveengineering:metal>,
+	# Copper, Aluminum, Lead, Silver, Nickel, Uranium, Constantan, Electrum, Steel, Iron, Gold
+	[     30,       31,   32,     33,     34,      35,         36,       37,    38,   39,   40 ]);
+
+# Readd copper and tin plate recipes
+addPlateRecipe(<thermalfoundation:material:320>, <ore:ingotCopper>);
+addPlateRecipe(<thermalfoundation:material:321>, <ore:ingotTin>);
+
+
+# Remove gear recipes
+removeRecipesOfItemsWithMeta(<thermalfoundation:material>,
+	#   Iron,       Gold,   Copper,    Tin,   Silver,     Lead, Aluminum,
+	[     24,         25,      256,    257,      258,      259,      260,
+	# Nickel,   Platinum,  Iridium,   Mana,    Steel, Electrum,    Invar,
+	     261,        262,      263,    264,      288,      289,      290,
+	# Bronze, Constantan, Signalum, Limium, Enderium
+	     291,        292,      293,    294,      295 ]);
+
+# Readd copper and tin gear recipes
+addGearRecipe(<thermalfoundation:material:256>, <ore:ingotCopper>);
+addGearRecipe(<thermalfoundation:material:257>, <ore:ingotTin>);
 
 
 # =======================================
@@ -122,43 +167,6 @@ removeFoundationToolsAndArmor("constanstan");
 #       Perhaps add custom sticks / molds for them, also?
 
 # TODO: Maybe make diamond tools only obtainable through exploration and trading?
-
-
-# ===============================
-# Disable basic crafting of gears
-# ===============================
-
-recipes.remove(<thermalfoundation:material:24>);  # Iron
-recipes.remove(<thermalfoundation:material:25>);  # Gold
-recipes.remove(<thermalfoundation:material:256>); # Copper
-recipes.remove(<thermalfoundation:material:257>); # Tin
-recipes.remove(<thermalfoundation:material:258>); # Silver
-recipes.remove(<thermalfoundation:material:259>); # Lead
-recipes.remove(<thermalfoundation:material:260>); # Aluminum
-recipes.remove(<thermalfoundation:material:261>); # Nickel
-recipes.remove(<thermalfoundation:material:262>); # Platinum
-recipes.remove(<thermalfoundation:material:263>); # Iridium
-recipes.remove(<thermalfoundation:material:264>); # Mana Infused
-recipes.remove(<thermalfoundation:material:288>); # Steel
-recipes.remove(<thermalfoundation:material:289>); # Electrum
-recipes.remove(<thermalfoundation:material:290>); # Invar
-recipes.remove(<thermalfoundation:material:291>); # Bronze
-recipes.remove(<thermalfoundation:material:292>); # Constantan
-recipes.remove(<thermalfoundation:material:293>); # Signalum
-recipes.remove(<thermalfoundation:material:294>); # Lumium
-recipes.remove(<thermalfoundation:material:295>); # Enderium
-
-# Readd copper and tin gear recipes without iron
-
-recipes.addShaped(<thermalfoundation:material:256>,
-	[ [              null, <ore:ingotCopper>,              null ],
-	  [ <ore:ingotCopper>,   <ore:stickWood>, <ore:ingotCopper> ],
-	  [              null, <ore:ingotCopper>,              null ] ]);
-
-recipes.addShaped(<thermalfoundation:material:257>,
-	[ [           null,  <ore:ingotTin>,           null ],
-	  [ <ore:ingotTin>, <ore:stickWood>, <ore:ingotTin> ],
-	  [           null,  <ore:ingotTin>,           null ] ]);
 
 
 # ================================
