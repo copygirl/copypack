@@ -20,6 +20,16 @@ root:
   curseOptionalDependencies: false
   
   entries:
+  # DEPENDENCIES (currently broken?)
+  - AutoRegLib
+  - Baubles
+  - Bookshelf
+  - CoFH Core
+  - CoFH World
+  - Placebo
+  - Redstone Flux
+  
+  # MODS
   - Antique Atlas
   - Biomes O' Plenty
   - Chisels & Bits
@@ -35,11 +45,9 @@ root:
   - OpenComputers
   - Psi
   - Quark
-  - Redstone Flux
   - Thermal Foundation
   - The Twilight Forest
   - Wearable Backpacks
-  
   # Latest Thaumcraft is unstable (currently)
   - name: Thaumcraft
     version: 6.1.BETA13
