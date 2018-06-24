@@ -155,7 +155,7 @@ recipes.addShaped(<thermalfoundation:material:256>,
 	  [ <ore:ingotCopper>,   <ore:stickWood>, <ore:ingotCopper> ],
 	  [              null, <ore:ingotCopper>,              null ] ]);
 
-recipes.addShaped(<thermalfoundation:material:256>,
+recipes.addShaped(<thermalfoundation:material:257>,
 	[ [           null,  <ore:ingotTin>,           null ],
 	  [ <ore:ingotTin>, <ore:stickWood>, <ore:ingotTin> ],
 	  [           null,  <ore:ingotTin>,           null ] ]);
