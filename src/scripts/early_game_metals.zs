@@ -12,8 +12,7 @@ function removeRecipesOfItemsWithMeta(base as IItemStack, metas as int[]) {
 # =================================================
 
 # Engineer's Hammer
-recipes.remove(<immersiveengineering:tool:0>);
-recipes.addShaped(<immersiveengineering:tool:0>,
+recipes.addShaped(<immersiveengineering:tool:0>.withDamage(60),
 	[ [            null, <ore:ingotCopper>, <minecraft:string> ],
 	  [            null,   <ore:stickWood>,  <ore:ingotCopper> ],
 	  [ <ore:stickWood>,              null,               null ] ]);
