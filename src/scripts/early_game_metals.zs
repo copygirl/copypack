@@ -33,13 +33,13 @@ recipes.addShaped(<foundry:machine:1>,
 global hammer as IIngredient = <immersiveengineering:tool:0>;
 
 function addPlateRecipe(result as IItemStack, item as IIngredient) {
-	recipes.addShapeless(result, [ item, item, hammer.transformDamage(2) ]);
+	recipes.addShapeless(result, [ item, item, hammer ]);
 }
 
 function addGearRecipe(result as IItemStack, item as IIngredient) {
-	recipes.addShaped(result, [ [ null, item, hammer.transformDamage(3) ],
-	                            [ item, item, item ],
-	                            [ null, item, null ] ]);
+	recipes.addShaped(result, [ [ null, item, hammer ],
+	                            [ item, item,   item ],
+	                            [ null, item,   null ] ]);
 }
 
 
