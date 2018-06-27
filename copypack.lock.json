@@ -33,7 +33,7 @@
     "provider" : "CURSE",
     "name" : "CraftTweaker",
     "projectID" : 239197,
-    "fileID" : 2554607
+    "fileID" : 2576160
   }, {
     "provider" : "CURSE",
     "name" : "Dynamic Trees",
@@ -53,7 +53,7 @@
     "provider" : "CURSE",
     "name" : "Ignition: Foundry",
     "projectID" : 283807,
-    "fileID" : 2573355
+    "fileID" : 2576907
   }, {
     "provider" : "CURSE",
     "name" : "Geolosys",
@@ -73,7 +73,7 @@
     "provider" : "CURSE",
     "name" : "Just Enough Items (JEI)",
     "projectID" : 238222,
-    "fileID" : 2572552
+    "fileID" : 2576171
   }, {
     "provider" : "CURSE",
     "name" : "OpenComputers",
@@ -103,7 +103,7 @@
     "provider" : "CURSE",
     "name" : "Wearable Backpacks",
     "projectID" : 257572,
-    "fileID" : 2525511
+    "fileID" : 2576699
   }, {
     "provider" : "CURSE",
     "name" : "Thaumcraft",
@@ -135,7 +135,7 @@
     "fileName" : "Unity.zip",
     "side" : "CLIENT",
     "projectID" : 222097,
-    "fileID" : 2547422
+    "fileID" : 2576530
   }, {
     "provider" : "DIRECT",
     "name" : "Slice",
@@ -221,7 +221,7 @@
     "name" : "Bookshelf",
     "side" : "CLIENT",
     "projectID" : 228525,
-    "fileID" : 2572825
+    "fileID" : 2577067
   }, {
     "provider" : "CURSE",
     "name" : "Redstone Flux",
@@ -272,7 +272,7 @@
     },
     "files" : { }
   }, {
-    "entries" : [ "Caliper" ],
+    "entries" : [ "Caliper", "Bookshelf" ],
     "properties" : {
       "name" : "Caliper",
       "selected" : false,
