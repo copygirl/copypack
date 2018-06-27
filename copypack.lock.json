@@ -91,6 +91,11 @@
     "fileID" : 2573421
   }, {
     "provider" : "CURSE",
+    "name" : "Tails",
+    "projectID" : 223584,
+    "fileID" : 2445532
+  }, {
+    "provider" : "CURSE",
     "name" : "Thermal Foundation",
     "projectID" : 222880,
     "fileID" : 2567555
