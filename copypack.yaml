@@ -10,8 +10,10 @@ minecraftDir: src
 userFiles:
   include:
   - "options.txt"
-  - "quark.cfg"
+  - "betterfoliage.cfg"
+  - "fruitphone.cfg"
   - "jei.cfg"
+  - "quark.cfg"
   exclude: []
 
 root:
