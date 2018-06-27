@@ -21,7 +21,7 @@ You may use the `build` script to update the pack information (such as version),
 # Also update some mods
 ./scripts/build -E "Immersive Engineering" -E Charset
 # Update all mods and dependencies to the latest version
-./scripts/build --force
+./scripts/build --updateAll
 ```
 
 You can create the [SKCraft][skcraft], MultiMC and server packs using the `pack` script. The finished packs will end up in the `workspace/`, `.multimc/` and `.server/` directories, respectively.
