@@ -8,6 +8,14 @@ mods.jei.JEI.removeAndHide(<foundry:machine:4>);
 # Coal Coke (done by Immersive Engineering)
 mods.jei.JEI.hide(<foundry:component:21>);
 
+# Refractory Fluid Container
+mods.jei.JEI.removeAndHide(<foundry:fluidcontainer>);
+
+# Refractory Tanks
+mods.jei.JEI.removeAndHide(<foundry:refractorytank>);
+mods.jei.JEI.removeAndHide(<foundry:refractorytankstandard>);
+mods.jei.JEI.removeAndHide(<foundry:infernotank>);
+
 # TODO: Remove Heating Coil + Constantan Rod and adjust recipes?
 
 
