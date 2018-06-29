@@ -76,8 +76,6 @@ root:
         selected: true
         recommendation: starred
       entries:
-      - name: Better Foliage
-        description: Prettier grass and leaves, at the cost of rendering performance.
       - name: Better Placement
         description: Just hold right click and drag to place ALL THE BLOCKS at once!
       - name: Mouse Tweaks
@@ -87,10 +85,12 @@ root:
     - feature:
         selected: false
       entries:
-        - name: Inventory Tweaks
-          description: Fine! If you really want it so badly! You MONSTER!
-        - name: Item Scroller
-          description: Alternative to Mouse Tweaks for moving items with mouse wheel and similar.
+      - name: Better Foliage
+        description: Prettier grass and leaves, at the cost of chunk rendering performance.
+      - name: Inventory Tweaks
+        description: Fine! If you really want it so badly! You MONSTER!
+      - name: Item Scroller
+        description: Alternative to Mouse Tweaks for moving items with mouse wheel and similar.
     
     # CLIENT DEBUGGING TOOLS
     - feature:

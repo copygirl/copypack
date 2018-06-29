@@ -150,12 +150,6 @@
     "url" : "https://centerofthemultiverse.net/launcher/mirror/Slice.zip"
   }, {
     "provider" : "CURSE",
-    "name" : "Better Foliage",
-    "side" : "CLIENT",
-    "projectID" : 228529,
-    "fileID" : 2478147
-  }, {
-    "provider" : "CURSE",
     "name" : "Better Placement",
     "side" : "CLIENT",
     "projectID" : 278406,
@@ -166,6 +160,12 @@
     "side" : "CLIENT",
     "projectID" : 60089,
     "fileID" : 2462627
+  }, {
+    "provider" : "CURSE",
+    "name" : "Better Foliage",
+    "side" : "CLIENT",
+    "projectID" : 228529,
+    "fileID" : 2478147
   }, {
     "provider" : "CURSE",
     "name" : "Inventory Tweaks",
@@ -234,15 +234,6 @@
     "fileID" : 2567260
   } ],
   "features" : [ {
-    "entries" : [ "Better Foliage" ],
-    "properties" : {
-      "name" : "Better Foliage",
-      "selected" : true,
-      "description" : "Prettier grass and leaves, at the cost of rendering performance.",
-      "recommendation" : "starred"
-    },
-    "files" : { }
-  }, {
     "entries" : [ "Better Placement" ],
     "properties" : {
       "name" : "Better Placement",
@@ -258,6 +249,14 @@
       "selected" : true,
       "description" : "Convenience functions for moving items around containers with the mouse.",
       "recommendation" : "starred"
+    },
+    "files" : { }
+  }, {
+    "entries" : [ "Better Foliage" ],
+    "properties" : {
+      "name" : "Better Foliage",
+      "selected" : false,
+      "description" : "Prettier grass and leaves, at the cost of chunk rendering performance."
     },
     "files" : { }
   }, {
