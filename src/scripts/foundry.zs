@@ -11,6 +11,16 @@ mods.jei.JEI.hide(<foundry:component:21>);
 # TODO: Remove Heating Coil + Constantan Rod and adjust recipes?
 
 
+# ===============================================
+# Add other coals as valid fuels in Burner Heater
+# ===============================================
+
+mods.foundry.BurnerHeater.addFuel(<geolosys:coal:1>, 1600, 248);
+mods.foundry.BurnerHeater.addFuel(<geolosys:coal:2>, 2400, 258);
+mods.foundry.BurnerHeater.addFuel(<geolosys:coal:3>, 3200, 268);
+mods.foundry.BurnerHeater.addFuel(<ore:blockFuelCoke>, 16000, 258);
+
+
 # ===========================================
 # Remove guns, ingredients, bullets and molds
 # ===========================================
