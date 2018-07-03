@@ -1,7 +1,3 @@
-import crafttweaker.item.IIngredient;
-
-global hammer as IIngredient = <immersiveengineering:tool:0>;
-
 # ===============================
 # Add Dynamic Trees seeds as fuel
 # ===============================

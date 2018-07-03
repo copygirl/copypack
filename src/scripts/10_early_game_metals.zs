@@ -29,8 +29,6 @@ recipes.addShaped(<foundry:machine:1>,
 # Remove / replace plate and gear recipes
 # =======================================
 
-global hammer as IIngredient = <immersiveengineering:tool:0>;
-
 function addPlateRecipe(result as IItemStack, item as IIngredient) {
 	recipes.addShapeless(result, [ item, item, hammer ]);
 }
