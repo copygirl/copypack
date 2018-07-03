@@ -1,3 +1,7 @@
+import crafttweaker.item.IIngredient;
+
+global hammer as IIngredient = <immersiveengineering:tool:0>;
+
 # ===============================
 # Add Dynamic Trees seeds as fuel
 # ===============================
@@ -5,6 +9,16 @@
 for item in <ore:treeSapling>.items {
 	furnace.setFuel(item, 100);
 }
+
+# ====================
+# Change Bucket recipe
+# ====================
+
+recipes.remove(<minecraft:bucket>);
+recipes.addShaped(<minecraft:bucket>,
+	[ [           null,           null,         hammer ],
+	  [ <ore:plateTin>,           null, <ore:plateTin> ],
+	  [           null, <ore:plateTin>,           null ] ]);
 
 # ===========================================
 # Change Hopper and Refractory Hopper recipes
