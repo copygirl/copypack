@@ -1,7 +1,7 @@
 {
   "name" : "copypack",
   "title" : "copypack",
-  "version" : "0.2.7",
+  "version" : "0.2.8",
   "authors" : [ "copygirl" ],
   "mcVersion" : "1.12.2",
   "forge" : 2705,
